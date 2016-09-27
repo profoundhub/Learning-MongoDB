@@ -5,6 +5,12 @@ const Url = 'mongodb://localhost:27017/' + dbName
 
 mongo.connect(Url).then(db => {
 
+      db.collection('users', (err, col) => {
+
+          const query = { username: 'tinatime' }
+
+          const delta = { $set: { age: 40 } }
+
 })
 
 ...
