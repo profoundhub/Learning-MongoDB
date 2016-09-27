@@ -1,20 +1,14 @@
-var mongo = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/learnyoumongo";
+const mongo = require('mongodb').MongoClient
+const dbName = process.argv[2]
+const Url = 'mongodb://localhost:27017/' + dbName
 
-mongo.connect(url, function(err, db) {
 
-    if (err) return console.error(err);
+mongo.connect(Url).then(db => {
 
-    var col = db.collection(process.argv[2]);
+})
 
-    col.remove({
+...
 
-        _id: process.argv[3]
-
-    }, function(err) {
-
-        if (err) throw err;
-        
         db.close();
 
     });
