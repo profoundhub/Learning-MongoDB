@@ -1,4 +1,4 @@
-Learn MongoDB
+Learn MongoDB: Update
 ───────────────
 UPDATE
 Exercise 6 of 9

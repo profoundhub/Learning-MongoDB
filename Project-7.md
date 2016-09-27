@@ -1,4 +1,4 @@
-Learn MongoDB
+Learn MongoDB: Remove
 ───────────────
  REMOVE
  Exercise 7 of 9
